@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui-custom.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui-custom.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui-custom.theme.css"> -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    
+    <!-- <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="navBar">
+      <div class="container-fluid">
+        <h2 class="h2 fw-bold me-5 ms-2" href="#" style="color:white">TechCon 2023</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myForm">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <p class="nav-link"  id="displayButton">Display Registrees</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- Carousel section starts -->
+    <div id="carouselExampleCaptions" class="carousel slide bg-primary" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel/carousel-1.jpg" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-md-block" >
+            <h5 class="fw-bold">Unleashing the Power of AI</h5>
+            <p>Transforming Industries with Intelligent Machines!</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="images/carousel/carousel-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5 class="fw-bold">Blockchain Beyond Cryptocurrency</h5>
+            <p>Building Trust and Transparency Across Sectors!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/carousel-3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-md-block">
+            <h5 class="fw-bold">Sustainable Tech</h5>
+            <p>Empowering a Greener, Cleaner World!</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel section ends -->
+
+    <!-- Speaker section starts -->
+    <div class="container" id="speakers">
+      <div class="row" >
+        <div class="col">
+          <p class="h3 text-center mt-5 mb-5 fw-bold"> Meet the Speakers</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4">
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Elon Musk</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">CEO of Tesla and SpaceX</h6>
+              <p class="card-text">A trailblazing entrepreneur accelerating sustainable transportation and space exploration to new heights.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Lisa Su</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">CEO of Advanced Micro Devices</h6>
+              <p class="card-text">A visionary leader pioneering high-performance computing and immersive experiences, revolutionizing the tech industry.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Satya Nadella</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary"> CEO of Microsoft</h6>
+              <p class="card-text">A driving force behind an intelligent and inclusive digital future, revolutionizing productivity and innovation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sheryl Sandberg</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">COO of Facebook</h6>
+              <p class="card-text">A champion of inclusive and safe online communities, shaping the future of digital connectivity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-4" id="hiddenSpeakers" style="display:none">
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sundar Pichai </h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">CEO of Google and Alphabet Inc.</h6>
+              <p class="card-text">A tech visionary empowering global access to information and innovative technologies.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ginni Rometty</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">Former CEO of IBM</h6>
+              <p class="card-text">A leader propelling AI and quantum computing, transforming industries with cutting-edge solutions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tim Cook</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">CEO of Apple Inc.</h6>
+              <p class="card-text">A pioneer of iconic products and privacy-focused innovations, reshaping the consumer tech landscape.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-2 border-warning-subtle">
+            <img src="images/speakers/speaker-8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jensen Huang</h5>
+              <h6 class="card-subtitle mb-2 text-body-secondary">CEO of NVIDIA</h6>
+              <p class="card-text">A visionary unlocking breakthroughs in gaming and scientific research through GPU-accelerated computing and AI.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row w-100 text-center d-flex align-items-center m-0 mb-4" id="discoverRow">
+        <div class="col btn btn-warning text-light">
+          <p class="h5">Discover More >>></p>
+        </div>
+      </div>
+      <div class="row w-100 text-center d-none align-items-center m-0 mb-4" id="showLess">
+        <div class="col text-warning ">
+          <p class="h6" id="showLess">Show Less</p>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <!-- Speaker section ends -->
+
+
+    <!-- Registration section starts -->
+    <form class="container " id="myForm">
+      <div class="row">
+        <div class="col">
+          <p class="h3 text-center mb-5 fw-bold"> Register Now</p>
+        </div>
+      </div>
+      <!-- Form starts here -->
+      <div class="row">
+        <div class="col-md-6 mb-3 ">
+          <label for="fname" > First Name</label>
+          <input type="name" class="form-control" minlength="2" id="fname" placeholder="" name="fname" required>
+        </div>
+        <div class="col-md-6 mb-3 ">
+          <label for="lname" >Last Name</label>
+          <input type="name" class="form-control" id="lname" placeholder="" name="lname" required>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col-md-6 mb-3 ">
+          <label for="email" > Email</label>
+          <input type="email" class="form-control" id="email" placeholder="" name="email">
+          <div id="emailHelp" class="form-text ms-2">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="col-md-6 mb-3 ">
+          <label for="phone" >Phone Number</label>
+          <input type="name" class="form-control" id="phone" placeholder="" name="phone">
+          <div id="emailHelp" class="form-text ms-2">We'll never share your phone with anyone else.</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3 ">
+          <label for="birthdate" > Birthdate</label>
+          <input type="name" class="form-control" id="birthdate" placeholder="">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="" class="form-label d-block">Gender</label>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineRadio1">Male</label>
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="Male">
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label" for="inlineRadio2">Female</label>
+            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="Female">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3 ">
+          <label for="uni" > University</label>
+          <input type="text" class="form-control" id="uni" placeholder="" name="uni">
+        </div>
+        <div class="col-md-6 mb-3 ">
+          <label for="major" >Major</label>
+          <input type="text" class="form-control" id="major" placeholder="" name="major">
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3">
+          <label for="motive" class="form-label">Please explain your motivation to join us.</label>
+          <textarea class="form-control" id="motive" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row text-center mb-5">
+        <div class="col">
+          <button type="submit" class="btn btn-warning">Submit</button>
+        </div>
+      </div>
+    </form>
+    <!-- Registration section ends -->
+
+
+    <div class="container-fluid text-bg-secondary p-4" id="footer">
+      <div class="row text-center">
+        <div class="col-md-5">
+          <h3 class="display-6">TechCon 2023</h3>
+        </div>
+        <div class="col">
+          <h5> Contact Us</h5>
+          <div>
+            <p><i class="fas fa-envelope me-2"></i>techcon@outlook.com</p>
+            <p><i class="fas fa-phone me-2"></i>+961 71 123 456</p>
+            <p><i class="fab fa-linkedin me-2"></i>linked in</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Registration Modal starts -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Submitted Successfully</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Dear <span id="insertName"></span>,</p>
+            <p>Your registration has been submitted successfully. Please check your email soon. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning" id="newReg">New Registration</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Registration Modal ends -->
+
+    <!-- Log in Modal starts -->
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">PLease Log in to continue</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form class="container" id="myForm2">
+            <div class="modal-body">
+                <div class="row" id="loginRow">
+                  <div class="col-md-6 mb-3 ">
+                    <label for="username" > Username</label>
+                    <input type="name" class="form-control" id="username" placeholder="" name="username" required>
+                  </div>
+                  <div class="col-md-6 mb-3 ">
+                    <label for="password" >Password</label>
+                    <input type="name" class="form-control" id="password" placeholder="" name="password" required>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-warning" id="logIn">Log in</button>
+              </div>
+          </form> 
+        </div>
+    </div>
+    <!-- Log in Modal ends -->
+  </main>
+
+
+<!-- <script src="jQuery/jQuery.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!-- <script src="jquery-ui/jquery-ui.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+<!-- <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script> -->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.17.0/jquery.validate.min.js"></script>
+
+
+<!-- <script src="bootstrap-5.3.0-dist/js/bootstrap.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+
+</body>
+
+</html>

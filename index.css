@@ -1,0 +1,28 @@
+#navBar{
+    background-color: rgb(27, 27, 100);
+}
+
+.carousel-item{
+    max-height: 500px;
+}
+
+/* #ui-datepicker-div{
+    z-index: 30000!important;
+}  */
+
+button{
+    color:white!important;
+}
+.error{
+    color:red!important;
+}
+
+#discoverRow{
+    height: 50px!important;
+}
+#showLess{
+    text-decoration: underline;
+}
+#showLess:hover, #displayButton:hover{
+    cursor: pointer;
+}
