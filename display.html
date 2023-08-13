@@ -48,71 +48,105 @@
             </div>
           </div>
 
+          <!-- thbrrtbyryytr -->
           <div class="container">
-            <div class="row mb-4">
+            <div class="row mb-3">
                 <div class="col text-center">
                     <button class="btn btn-warning options" data-bs-toggle="collapse" data-bs-target="#filter">Filter</button>
                     <button class="btn btn-warning options" data-bs-toggle="collapse" data-bs-target="#sort">Sort</button>
                     <button class="btn btn-warning options" data-bs-toggle="collapse" data-bs-target="#search">Search</button>
-                    <button class="btn btn-warning options" >Reset</button>
+                    <button class="btn btn-warning options" id="reset">Reset</button>
                 </div>
             </div>
             <div class="row text-center">
               <div id='filter' class="collapse">
-                  <form >
-                      <label>Gender:</label>
-                      <select name="filterGenderOptions" id="filterGenderOptions">
+                  <form class="row text-center">
+                    <div class=" col-12 col-md-1 mb-1">
+                    </div>
+                    <div class=" col-12 col-md-1 mb-1">
+                      <label class="float-md-end"class="float-md-end">Gender:</label>
+                    </div>
+                    <div class=" col-12 col-md-3 mb-1">
+                      <select class="form-select " name="filterGenderOptions" id="filterGenderOptions">
                           <option value="any">Any</option>
                           <option value="Male">Male</option>
                           <option value="Female">Female</option>
                       </select>
-                      <label>Status:</label>
-                      <select name="filterStatusOptions" id="filterStatusOptions">
+                    </div>
+                    <div class=" col-12 col-md-1 mb-1"> 
+                      <label class="float-md-end">Status:</label>
+                    </div>
+                    <div class=" col-12 col-md-3 mb-1">
+                      <select class="form-select " name="filterStatusOptions" id="filterStatusOptions">
                           <option value="any">Any</option>
                           <option value="Accepted">Accepted</option>
                           <option value="Rejected">Rejected</option>
-                          <option value="notYet">Not Evaluated</option>
+                          <option value="-">Not Evaluated</option>
   
                       </select>
+                    </div>
+                    <div class=" col-12 col-md-2 mb-1"> 
                       <button class="btn btn-secondary" id='filterButton'>Filter</button>
+                    </div>
+                    <div class=" col-12 col-md-1 mb-1">
+                    </div>
                   </form>
               </div>
               <div id='sort' class="collapse">
-                  <form >
-                      <label>Sort:</label>
-                      <select name="sortBy" id="sortBy">
+                  <form class="row">
+                    <div class=" col-12 col-md-3 mb-1"> 
+                      <label class="float-md-end">Sort:</label>
+                    </div>
+                      <div class=" col-12 col-md-3 mb-1"> 
+                      <select class="form-select " name="sortBy" id="sortBy">
                           <option value="fname">First Name</option>
                           <option value="lname">Last Name</option>
                           <option value="id">Registration Date</option>
                           <option value="birthdate">Birth Date</option>
   
                       </select>
-                      <select name="order" id="order">
+                    </div>
+                      <div class=" col-12 col-md-3 mb-1"> 
+                      <select class="form-select " name="order" id="order">
                           <option value="ascending">Ascending</option>
                           <option value="descending">Descending</option>
                       </select>
-                      <button class="btn btn-secondary" id="sortButton">Sort</button>
+                    </div>
+                      <div class=" col-12 col-md-3 mb-1"> 
+                      <button class="btn btn-secondary float-md-start" id="sortButton">Sort</button>
+                    </div>
                   </form>
               </div>
-              <div class="collapse" id="search" >
-                  <form >
-                      <label>Search by:</label>
-                      <select name="searchBy" id="searchBy">
-                          <option value="fname">First Name</option>
-                          <option value="lname">Last Name</option>
-                          <option value="email">Email</option>
-                          <option value="phone">Phone</option>
-                          <option value="univ">University</option>
-                          <option value="maj">Major</option>
-                      </select>
-                      <input id="searchValue"type="text">
-                      <button class="btn btn-secondary"id="searchButton">Search</button>
+              <div id="search" class="collapse container"  >
+                  <form class="row">
+                    <div class=" col-12 col-md-3 mb-1"> 
+                      <label class="float-md-end">Search by:</label>
+                    </div>
+                    <div class=" col-12 col-md-3 mb-1"> 
+                      <select class="form-select " name="searchBy" id="searchBy">
+                        <option value="fname">First Name</option>
+                        <option value="lname">Last Name</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="univ">University</option>
+                        <option value="maj">Major</option>
+                    </select>
+                    </div>
+                    <div class=" col-12 col-md-3 mb-1"> 
+                      <input class="form-control" id="searchValue"type="text">
+                    </div>
+                    <div class=" col-12 col-md-3 mb-1"> 
+                      <button class="btn btn-secondary float-md-start"id="searchButton">Search</button>
+                    </div>
+                      
+                     
+                     
                   </form>
               </div>
             </div>
-            
           </div>
           
+          <!-- dtyberdtvyyrvy -->
 
         <div class="table-responsive mt-5">
             <table class="table table-responsive table-hover">
