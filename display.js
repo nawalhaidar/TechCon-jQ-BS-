@@ -68,12 +68,12 @@ $('document').ready(function(){
             }
             if(sortBy=='birthdate'){
                 function compareDates(date1, date2){
-                    let month1=date1.slice(5,7);
-                    let day1=date1.slice(8,10);
-                    let year1=date1.slice(0,4);
-                    let month2=date2.slice(5,7);
-                    let day2=date2.slice(8,10);
-                    let year2=date2.slice(0,4);
+                    let day1=date1.slice(0,2);
+                    let month1=date1.slice(3,5);
+                    let year1=date1.slice(6,10);
+                    let day2=date2.slice(0,2);
+                    let month2=date2.slice(3,5);
+                    let year2=date2.slice(6,10);
         
                     if(year1>year2 || (year1===year2 && month1>month2)||(year1===year2 && month1===month2 && day1>day2)){
                         return 1;
